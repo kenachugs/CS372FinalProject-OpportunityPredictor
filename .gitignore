@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+.eggs/
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Jupyter
+.ipynb_checkpoints
+profile_default/
+ipython_config.py
+
+# Data (keep the structure, ignore large files)
+data/raw/*.csv
+data/raw/*.zip
+# Keep processed files small enough to commit, but allow ignoring big ones:
+# data/processed/*.pkl
+
+# Models — pickle files can be large, but keep them for graders to avoid re-training
+# models/*.pkl     # uncomment if your models get too big
+
+# Streamlit
+.streamlit/secrets.toml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Environment
+.env
