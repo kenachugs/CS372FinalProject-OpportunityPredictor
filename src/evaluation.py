@@ -45,7 +45,7 @@ class EvalResult:
             "inference_ms_per_1k": self.inference_time_per_1k * 1000,
         }
 
-"AI assisted scaffolding"
+#AI assisted scaffolding
 def evaluate_model(
     model,
     X_test: np.ndarray,

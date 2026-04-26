@@ -96,7 +96,7 @@ FEATURE_COLUMNS = [
     "nonwhite_share2010",    # Composite minority share
 ]
 
-"AI assisted scaffolding"
+#AI assisted scaffolding
 def _simulate_outcome(
     rng: np.random.Generator,
     poverty: np.ndarray,
@@ -147,7 +147,7 @@ def _simulate_outcome(
     else:
         raise ValueError(f"Unknown outcome kind: {kind}")
 
-"AI assisted scaffolding"
+#AI assisted scaffolding
 def generate_synthetic_dataset(
     n_tracts: int = 72000,
     random_state: int = 2025,

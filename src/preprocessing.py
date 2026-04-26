@@ -58,7 +58,7 @@ OUTCOME_COLUMNS = ["kfr_pooled_pooled_p25", "jail_pooled_pooled_p25"]
 ID_COLUMNS = ["state", "county", "tract"]
 
 @dataclass
-"AI assisted scaffolding"
+#AI assisted scaffolding
 class PreprocessingConfig:
     """Configuration for the preprocessing pipeline."""
     winsorize: bool = True
@@ -69,7 +69,7 @@ class PreprocessingConfig:
 
 
 @dataclass
-"AI assisted scaffolding"
+#AI assisted scaffolding
 class PreprocessingArtifacts:
     """Fitted preprocessing state so test data can be transformed identically."""
     winsor_bounds: dict = field(default_factory=dict)
@@ -85,7 +85,7 @@ class PreprocessingArtifacts:
 # ---------------------------------------------------------------------------
 # Data quality step 1: winsorization
 # ---------------------------------------------------------------------------
-"AI assisted scaffolding"
+#AI assisted scaffolding
 def winsorize_fit_transform(
     df: pd.DataFrame,
     columns: list,
@@ -103,7 +103,7 @@ def winsorize_fit_transform(
         df[col] = df[col].clip(lower=lo, upper=hi)
     return df
 
-"AI assisted scaffolding"
+#AI assisted scaffolding
 def winsorize_transform(df: pd.DataFrame, artifacts: PreprocessingArtifacts) -> pd.DataFrame:
     df = df.copy()
     for col, (lo, hi) in artifacts.winsor_bounds.items():
@@ -148,7 +148,7 @@ def apply_imputer(
 # ---------------------------------------------------------------------------
 # Feature engineering
 # ---------------------------------------------------------------------------
-"AI assisted scaffolding"
+#AI assisted scaffolding
 def add_engineered_features(
     df: pd.DataFrame,
     z_params: Optional[dict] = None,

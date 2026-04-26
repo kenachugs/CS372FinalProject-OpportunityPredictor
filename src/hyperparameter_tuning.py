@@ -44,7 +44,7 @@ class TuningResult:
     std_rmse: float
     fold_rmses: list
 
-"AI assisted scaffolding"
+#AI assisted scaffolding
 def cv_evaluate_gbm(
     X: np.ndarray,
     y: np.ndarray,
@@ -73,7 +73,7 @@ def cv_evaluate_gbm(
         fold_rmses=fold_rmses,
     )
 
-"AI assisted scaffolding"
+#AI assisted scaffolding"
 def tune_gbm(
     X: np.ndarray,
     y: np.ndarray,
@@ -118,7 +118,7 @@ def tune_gbm(
     df = pd.DataFrame(rows).sort_values("mean_rmse").reset_index(drop=True)
     return df
 
-"AI assisted scaffolding"
+#AI assisted scaffolding
 def tune_lasso(
     X: np.ndarray,
     y: np.ndarray,

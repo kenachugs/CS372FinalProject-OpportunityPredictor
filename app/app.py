@@ -17,7 +17,7 @@ e.g. ProPublica's COMPAS investigation). The app UI makes this explicit.
 Launch with:
     streamlit run app/app.py
 """
-"AI assitance used for UI interface"
+# AI assitance used for UI interface
 from __future__ import annotations
 
 import pickle

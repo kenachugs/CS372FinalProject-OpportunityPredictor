@@ -82,7 +82,7 @@ def tree_importance(
 # SHAP (optional dependency)
 # ---------------------------------------------------------------------------
 
-"AI assisted scaffolding"
+#AI assisted scaffolding
 def shap_global_summary(
     model,
     X_sample: np.ndarray,
