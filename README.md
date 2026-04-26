@@ -8,6 +8,10 @@ Opportunity Predictor trains a suite of machine-learning models (linear, Lasso, 
 
 ## Quick Start
 
+Link to the URL website: https://cs372finalproject-opportunitypredictor.streamlit.app/ (if the app doesn't load after 10-30 due to potential inactivity, please use the local run option)
+
+Local Run Option:
+
 ```bash
 # 1. Install dependencies
 pip install -r requirements.txt
